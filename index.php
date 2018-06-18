@@ -1,4 +1,4 @@
-!--  ----------------------------------------------------------------------  -->
+<!--  ----------------------------------------------------------------------  -->
 <!--  NOTA: Adicione o seguinte elemento <META> à sua página <HEAD>.  Se      -->
 <!--  necessário, modifique o parâmetro charset para especificar o conjunto   -->
 <!--  de caracteres de sua página HTML.                                       -->
@@ -13,7 +13,7 @@
 <form action="https://cs69.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
 
 <input type=hidden name="orgid" value="00D2D0000000MRE">
-<input type=hidden name="retURL" value="http://electrolux.com.br">
+<input type=hidden name="retURL" value="http://www.electrolux.com.br">
 
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTA: Estes campos são elementos de depuração opcionais. Remova o       -->
