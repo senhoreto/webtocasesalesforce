@@ -1,4 +1,4 @@
-<!--  ----------------------------------------------------------------------  -->
+!--  ----------------------------------------------------------------------  -->
 <!--  NOTA: Adicione o seguinte elemento <META> à sua página <HEAD>.  Se      -->
 <!--  necessário, modifique o parâmetro charset para especificar o conjunto   -->
 <!--  de caracteres de sua página HTML.                                       -->
@@ -6,26 +6,20 @@
 
 <META HTTP-EQUIV="Content-type" CONTENT="text/html; charset=UTF-8">
 
-<script>
- function timestamp() { var response = document.getElementById("g-recaptcha-response"); if (response == null || response.value.trim() == "") {var elems = JSON.parse(document.getElementsByName("captcha_settings")[0].value);elems["ts"] = JSON.stringify(new Date().getTime());document.getElementsByName("captcha_settings")[0].value = JSON.stringify(elems); } } setInterval(timestamp, 500); 
-</script>
-<script src='https://www.google.com/recaptcha/api.js'></script>
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTA: Adicione o elemento <FORM> a seguir à sua página.                 -->
 <!--  ----------------------------------------------------------------------  -->
 
 <form action="https://cs69.salesforce.com/servlet/servlet.WebToCase?encoding=UTF-8" method="POST">
 
-<input type=hidden name='captcha_settings' value='{"keyname":"testes","fallback":"true","orgId":"00D2D0000000MRE","ts":""}'>
 <input type=hidden name="orgid" value="00D2D0000000MRE">
-<input type=hidden name="retURL" value="http://meu.electrolux.com.br">
+<input type=hidden name="retURL" value="http://electrolux.com.br">
 
 <!--  ----------------------------------------------------------------------  -->
 <!--  NOTA: Estes campos são elementos de depuração opcionais. Remova o       -->
 <!--  comentário dessas linhas se quiser testar no modo de depuração.         -->
 <!--  <input type="hidden" name="debug" value=1>                              -->
-<!--  <input type="hidden" name="debugEmail"                                  -->
-<!--  value="ana.bertoldi@electrolux.com">                                    -->
+<!--  <input type="hidden" name="debugEmail" value="bsoares@avanxo.com">      -->
 <!--  ----------------------------------------------------------------------  -->
 
 <label for="name">Nome do contato</label><input  id="name" maxlength="80" name="name" size="20" type="text" /><br>
@@ -216,7 +210,7 @@ Sub-Motivo:<select  id="00N80000002vVBb" name="00N80000002vVBb" title="Sub-Motiv
 
 <input type="hidden"  id="external" name="external" value="1" /><br>
 
-<div class="g-recaptcha" data-sitekey="6LffkF8UAAAAAHVt9hv7W3vTCEX7DEMKNizK_pBy"></div><br>
 <input type="submit" name="submit">
 
+</form>
 </form>
